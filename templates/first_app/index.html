@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -7,5 +8,8 @@
   <body>
     <h1>Hello, this is index.html!</h1>
     {{ insert_me }}
+
+    <h1>This is my avatar:</h1>
+    <img src="{% static "images/avatar.jpg" %}" alt="Creator's github avatar">
   </body>
 </html>
